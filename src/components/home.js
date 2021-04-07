@@ -1,14 +1,33 @@
 import React from "react";
-
+import Homesvg from "../SVGs/Homesvg.svg";
+import { motion } from "framer-motion";
 import "../styles/home.scss";
-import { NameSvg } from "./svgs";
+import HomeCard from "./HomeCard";
 
 const Home = () => {
   return (
     <div className="Home">
-      <div className="center">
-        <NameSvg />
+      <div className="front">
+        <img src={Homesvg} alt="" className="home_svg" />
+        <motion.div
+          initial={{ opacity: 0, y: -100 }}
+          transition={{ duration: 1 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="intro"
+        >
+          <motion.p className="Hi_tag subtitles">Hi , I'm</motion.p>
+          <motion.h1
+            initial={{ x: -100 }}
+            transition={{ duration: 1.5, type: "spring" }}
+            animate={{ x: 0 }}
+            className="Name"
+          >
+            PRIYANSHU
+          </motion.h1>
+          <motion.p className="work_tag subtitles">A Web Developer</motion.p>
+        </motion.div>
       </div>
+      <HomeCard />
     </div>
   );
 };
