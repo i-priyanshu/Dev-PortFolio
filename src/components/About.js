@@ -28,22 +28,22 @@ const AboutMe = () => {
   );
 };
 
-const IWidth = window.innerWidth;
-const Iheight = window.innerHeight;
-
 const AboutHeader = styled.h1`
   text-align: center;
+  color: white;
 `;
 
 const AboutBack = styled.div`
+  position: relative;
   background: #2e2e2e;
   transform: rotate(1.3deg);
   width: 100vw;
-  margin-top: 10rem;
+  margin-top: 9rem;
   padding-bottom: 1.3rem;
   @media (max-width: 768px) {
     transform: rotate(0deg);
   }
+  z-index: 10;
 `;
 
 const AboutInfo = styled.div`
@@ -59,15 +59,16 @@ const AboutInfo = styled.div`
   }
 
   @media (max-width: 768px) {
-    display: block;
+    flex-direction: column;
     transform: rotate(0deg);
   }
 `;
 
 const AboutImg = styled.img`
   border-radius: 50%;
-  width: ${IWidth / 10};
-  height: ${Iheight / 10};
+  @media (max-width: 768px) {
+    margin: 1rem;
+  }
 `;
 
 export default AboutMe;

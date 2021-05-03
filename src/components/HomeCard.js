@@ -94,5 +94,6 @@ const MaterialCards = styled.div`
 
 const ThingsTitle = styled.h1`
   text-align: center;
+  color: white;
   margin-bottom: 4rem;
 `;
