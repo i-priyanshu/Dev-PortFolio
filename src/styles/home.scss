@@ -6,8 +6,11 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #191919;
+}
+
 .front {
-  background: #191919;
   height: 100vh;
   width: 100%;
 }
@@ -25,7 +28,7 @@ h1 {
   color: rgb(145, 145, 145);
 }
 
-p {
+.subtitles {
   color: grey;
   font-family: "Ubuntu", sans-serif;
   font-size: 1.5rem;

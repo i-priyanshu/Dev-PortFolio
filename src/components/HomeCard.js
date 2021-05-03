@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { lighten, makeStyles } from "@material-ui/core/styles";
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
-import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import {
@@ -34,43 +33,45 @@ const HomeCard = () => {
   const classes = useStyles();
 
   return (
-    <MaterialCards>
-      <ThemeProvider theme={theme}>
-        <Card className={classes.root}>
-          <CardContent>
-            <Typography gutterBottom variant="h4" component="h2">
-              FrontEnd
-            </Typography>
-            <Typography variant="body1" color="textSecondary" component="p">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
-            </Typography>
-          </CardContent>
-        </Card>
-        <Card className={classes.root}>
-          <CardContent>
-            <Typography gutterBottom variant="h4" component="h2">
-              React
-            </Typography>
-            <Typography variant="body1" color="textSecondary" component="p">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
-            </Typography>
-          </CardContent>
-        </Card>
-        <Card className={classes.root}>
-          <CardContent>
-            <Typography gutterBottom variant="h4" component="h2">
-              Typescript
-            </Typography>
-            <Typography variant="body1" color="textSecondary" component="p">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
-            </Typography>
-          </CardContent>
-        </Card>
-      </ThemeProvider>
-    </MaterialCards>
+    <div>
+      <ThingsTitle>Things I Love</ThingsTitle>
+      <MaterialCards>
+        <ThemeProvider theme={theme}>
+          <Card className={classes.root}>
+            <CardContent>
+              <Typography gutterBottom variant="h4" component="h2">
+                FrontEnd
+              </Typography>
+              <Typography variant="body1" color="textSecondary" component="p">
+                I'm more front end focused and love to work with Reactjs as well
+                as pure HTML, CSS .
+              </Typography>
+            </CardContent>
+          </Card>
+          <Card className={classes.root}>
+            <CardContent>
+              <Typography gutterBottom variant="h4" component="h2">
+                React
+              </Typography>
+              <Typography variant="body1" color="textSecondary" component="p">
+                React has made my life a lot easier with Front-End development.
+              </Typography>
+            </CardContent>
+          </Card>
+          <Card className={classes.root}>
+            <CardContent>
+              <Typography gutterBottom variant="h4" component="h2">
+                Typescript
+              </Typography>
+              <Typography variant="body1" color="textSecondary" component="p">
+                The best part about typescript is that, it tells you beforehand
+                about simple error. this has made my life a lot easier.
+              </Typography>
+            </CardContent>
+          </Card>
+        </ThemeProvider>
+      </MaterialCards>
+    </div>
   );
 };
 
@@ -79,6 +80,19 @@ export default HomeCard;
 const MaterialCards = styled.div`
   display: flex;
   flex-direction: row;
-  background: #191919;
   justify-content: center;
+  margin-bottom: 6rem;
+  @media (max-width: 768px) {
+    display: block;
+    margin-left: 5rem;
+  }
+
+  @media (max-width: 400px) {
+    margin-left: 2rem;
+  }
+`;
+
+const ThingsTitle = styled.h1`
+  text-align: center;
+  margin-bottom: 4rem;
 `;
