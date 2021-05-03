@@ -8,6 +8,7 @@
 
 body {
   background-color: #191919;
+  overflow-x: hidden;
 }
 
 .front {
@@ -39,4 +40,8 @@ h1 {
   position: absolute;
   //  top: 50px;
   right: 0;
+}
+
+p {
+  font-family: "Ubuntu", sans-serif;
 }
