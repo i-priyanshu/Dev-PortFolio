@@ -3,6 +3,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
+// import CardMedia from "@material-ui/core/CardMedia";
+import { FrontEndSVG, ReactSVG, TypeSVG } from "./svgs";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   ThemeProvider,
   createMuiTheme,
@@ -18,6 +21,9 @@ const useStyles = makeStyles({
     margin: 10,
     background: "#2e2e2e",
     textAlign: "center",
+  },
+  media: {
+    height: 140,
   },
 });
 
@@ -38,6 +44,9 @@ const HomeCard = () => {
       <MaterialCards>
         <ThemeProvider theme={theme}>
           <Card className={classes.root}>
+            <CardImg>
+              <FrontEndSVG />
+            </CardImg>
             <CardContent>
               <Typography gutterBottom variant="h4" component="h2">
                 FrontEnd
@@ -49,6 +58,9 @@ const HomeCard = () => {
             </CardContent>
           </Card>
           <Card className={classes.root}>
+            <CardImg>
+              <ReactSVG />
+            </CardImg>
             <CardContent>
               <Typography gutterBottom variant="h4" component="h2">
                 React
@@ -59,6 +71,9 @@ const HomeCard = () => {
             </CardContent>
           </Card>
           <Card className={classes.root}>
+            <CardImg>
+              <TypeSVG />
+            </CardImg>
             <CardContent>
               <Typography gutterBottom variant="h4" component="h2">
                 Typescript
@@ -96,4 +111,18 @@ const ThingsTitle = styled.h1`
   text-align: center;
   color: white;
   margin-bottom: 4rem;
+`;
+
+const CardImg = styled.div`
+  margin-left: 6rem;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #8a2be2;
+  color: #f8f8f8;
+
+  svg {
+    height: 100px;
+    line-height: 100px;
+  }
 `;
