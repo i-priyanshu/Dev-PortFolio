@@ -3,9 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
-// import CardMedia from "@material-ui/core/CardMedia";
 import { FrontEndSVG, ReactSVG, TypeSVG } from "./svgs";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   ThemeProvider,
   createMuiTheme,
@@ -17,7 +15,6 @@ const useStyles = makeStyles({
   root: {
     maxWidth: 300,
     paddingTop: "2rem",
-    paddingBottom: "2rem",
     margin: 10,
     background: "#2e2e2e",
     textAlign: "center",
@@ -98,8 +95,8 @@ const MaterialCards = styled.div`
   justify-content: center;
   margin-bottom: 6rem;
   @media (max-width: 768px) {
-    display: block;
-    margin-left: 5rem;
+    flex-direction: column;
+    margin-left: 4rem;
   }
 
   @media (max-width: 400px) {

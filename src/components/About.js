@@ -38,7 +38,7 @@ const AboutBack = styled.div`
   background: #2e2e2e;
   transform: rotate(1.3deg);
   width: 100vw;
-  margin-top: 9rem;
+  margin-top: 5rem;
   padding-bottom: 1.3rem;
   @media (max-width: 768px) {
     transform: rotate(0deg);
