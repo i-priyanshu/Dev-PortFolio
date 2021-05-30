@@ -6,57 +6,162 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import { motion } from "framer-motion";
 import VideoLabelIcon from "@material-ui/icons/VideoLabel";
 import "animate.css/animate.min.css";
-import ScrollAnimation from "react-animate-on-scroll";
+import Zoom from "react-reveal/Zoom";
 
 const Projects = () => {
   return (
     <ProjectPage>
       <ProjectTitle>Projects</ProjectTitle>
-      <ProjectCard>
-        <ProjectDetail>
-          <h2>Project Header</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero,
-            ipsa?
-          </p>
-          <CardButton>
-            <Button
-              variant="contained"
-              color="primary"
-              href="#"
-              target="_blank"
-              startIcon={<GitHubIcon />}
-            >
-              Github
-            </Button>
-            <Button
-              variant="contained"
-              color="primary"
-              href="#"
-              target="_blank"
-              startIcon={<VideoLabelIcon />}
-              style={{ margin: "1rem 1rem" }}
-            >
-              Live Preview
-            </Button>
-          </CardButton>
-        </ProjectDetail>
-        <ProjectPreview>
-          <motion.img
-            whileHover={{
-              scale: 1.2,
-              transition: { duration: 1 },
-            }}
-            src="https://wallpaperaccess.com/full/3040338.jpg"
-            alt="project_preview"
-          />
-          <CardSVg>
-            <FontAwesomeIcon icon={["fab", "js"]} />
-            <FontAwesomeIcon icon={["fab", "react"]} />
-            <FontAwesomeIcon icon={["fab", "html5"]} />
-          </CardSVg>
-        </ProjectPreview>
-      </ProjectCard>
+      <Zoom>
+        <ProjectCard>
+          <ProjectDetail>
+            <h2>JS Note Editor</h2>
+            <p>
+              JS Note Editor is an online-IDE based web app to write and run the
+              code on the go. It consists of a Live-Markdown Editor as well to
+              mark the components easily. It makes use of bundlers like ESlint
+              and webpacks to compile the code and to import libraries from
+              NPM.js directly.
+            </p>
+            <CardButton>
+              <Button
+                variant="contained"
+                color="primary"
+                href="https://github.com/i-priyanshu/JSNote-Editor"
+                target="_blank"
+                startIcon={<GitHubIcon />}
+              >
+                Github
+              </Button>
+              <Button
+                variant="contained"
+                color="primary"
+                href="https://jseditor.vercel.app/"
+                target="_blank"
+                startIcon={<VideoLabelIcon />}
+                style={{ margin: "1rem 1rem" }}
+              >
+                Live Preview
+              </Button>
+            </CardButton>
+          </ProjectDetail>
+          <ProjectPreview>
+            <motion.img
+              whileHover={{
+                scale: 1.2,
+                transition: { duration: 1 },
+              }}
+              src="https://user-images.githubusercontent.com/70953098/120121810-2ea0b680-c1c3-11eb-8933-3fa7feb0bcad.png"
+              alt="project_preview"
+            />
+            <CardSVg>
+              <FontAwesomeIcon icon={["fab", "js"]} />
+              <FontAwesomeIcon icon={["fab", "react"]} />
+              <FontAwesomeIcon icon={["fab", "html5"]} />
+            </CardSVg>
+          </ProjectPreview>
+        </ProjectCard>
+      </Zoom>
+      <Zoom>
+        <ProjectCard>
+          <ProjectDetail>
+            <h2>CodeWar</h2>
+            <p>
+              JS Note Editor is an online-IDE based web app to write and run the
+              code on the go. It consists of a Live-Markdown Editor as well to
+              mark the components easily. It makes use of bundlers like ESlint
+              and webpacks to compile the code and to import libraries from
+              NPM.js directly.
+            </p>
+            <CardButton>
+              <Button
+                variant="contained"
+                color="primary"
+                href="https://github.com/i-priyanshu/JSNote-Editor"
+                target="_blank"
+                startIcon={<GitHubIcon />}
+              >
+                Github
+              </Button>
+              <Button
+                variant="contained"
+                color="primary"
+                href="https://jseditor.vercel.app/"
+                target="_blank"
+                startIcon={<VideoLabelIcon />}
+                style={{ margin: "1rem 1rem" }}
+              >
+                Live Preview
+              </Button>
+            </CardButton>
+          </ProjectDetail>
+          <ProjectPreview>
+            <motion.img
+              whileHover={{
+                scale: 1.2,
+                transition: { duration: 1 },
+              }}
+              src="https://user-images.githubusercontent.com/70953098/120121810-2ea0b680-c1c3-11eb-8933-3fa7feb0bcad.png"
+              alt="project_preview"
+            />
+            <CardSVg>
+              <FontAwesomeIcon icon={["fab", "js"]} />
+              <FontAwesomeIcon icon={["fab", "react"]} />
+              <FontAwesomeIcon icon={["fab", "html5"]} />
+            </CardSVg>
+          </ProjectPreview>
+        </ProjectCard>
+      </Zoom>
+      <Zoom>
+        <ProjectCard>
+          <ProjectDetail>
+            <h2>Dev Chat</h2>
+            <p>
+              JS Note Editor is an online-IDE based web app to write and run the
+              code on the go. It consists of a Live-Markdown Editor as well to
+              mark the components easily. It makes use of bundlers like ESlint
+              and webpacks to compile the code and to import libraries from
+              NPM.js directly.
+            </p>
+            <CardButton>
+              <Button
+                variant="contained"
+                color="primary"
+                href="https://github.com/i-priyanshu/JSNote-Editor"
+                target="_blank"
+                startIcon={<GitHubIcon />}
+              >
+                Github
+              </Button>
+              <Button
+                variant="contained"
+                color="primary"
+                href="https://jseditor.vercel.app/"
+                target="_blank"
+                startIcon={<VideoLabelIcon />}
+                style={{ margin: "1rem 1rem" }}
+              >
+                Live Preview
+              </Button>
+            </CardButton>
+          </ProjectDetail>
+          <ProjectPreview>
+            <motion.img
+              whileHover={{
+                scale: 1.2,
+                transition: { duration: 1 },
+              }}
+              src="https://user-images.githubusercontent.com/70953098/120121810-2ea0b680-c1c3-11eb-8933-3fa7feb0bcad.png"
+              alt="project_preview"
+            />
+            <CardSVg>
+              <FontAwesomeIcon icon={["fab", "js"]} />
+              <FontAwesomeIcon icon={["fab", "react"]} />
+              <FontAwesomeIcon icon={["fab", "html5"]} />
+            </CardSVg>
+          </ProjectPreview>
+        </ProjectCard>
+      </Zoom>
     </ProjectPage>
   );
 };
@@ -127,8 +232,9 @@ const ProjectPreview = styled.div`
 `;
 
 const CardButton = styled.div`
-  @media (max-width: 800px) {
-    display: flex;
+  @media (max-width: 900px) {
+    margin-top: 0.3rem;
+    display: grid;
   }
 `;
 
@@ -137,6 +243,11 @@ const CardSVg = styled(motion.div)`
     color: #6d83f2;
     margin-left: 1rem;
     font-size: 24px;
+  }
+  svg:hover {
+    color: #ab42f1;
+    cursor: pointer;
+    transition: color 1s ease-in-out;
   }
   margin-top: 0.2rem;
   margin-left: 1rem;

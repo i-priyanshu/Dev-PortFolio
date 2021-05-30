@@ -15,7 +15,9 @@ const Home = () => {
           animate={{ opacity: 1, y: 0 }}
           className="intro"
         >
-          <motion.p className="Hi_tag subtitles">Hi , I'm</motion.p>
+          <motion.p className="Hi_tag subtitles">Hello, World</motion.p>
+          <motion.p className="Hi_tag subtitles">I am</motion.p>
+
           <motion.h1
             initial={{ x: -100 }}
             transition={{ duration: 1.5, type: "spring" }}

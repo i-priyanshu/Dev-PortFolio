@@ -10,6 +10,7 @@ import {
   responsiveFontSizes,
 } from "@material-ui/core/styles";
 import styled from "styled-components";
+import Bounce from "react-reveal/Bounce";
 
 const useStyles = makeStyles({
   root: {
@@ -38,51 +39,55 @@ const HomeCard = () => {
   return (
     <div>
       <ThingsTitle>Things I Love</ThingsTitle>
-      <MaterialCards>
-        <ThemeProvider theme={theme}>
-          <Card className={classes.root}>
-            <CardImg>
-              <FrontEndSVG />
-            </CardImg>
-            <CardContent>
-              <Typography gutterBottom variant="h4" component="h2">
-                FrontEnd
-              </Typography>
-              <Typography variant="body1" color="textSecondary" component="p">
-                I'm more front end focused and love to work with Reactjs as well
-                as pure HTML, CSS .
-              </Typography>
-            </CardContent>
-          </Card>
-          <Card className={classes.root}>
-            <CardImg>
-              <ReactSVG />
-            </CardImg>
-            <CardContent>
-              <Typography gutterBottom variant="h4" component="h2">
-                React
-              </Typography>
-              <Typography variant="body1" color="textSecondary" component="p">
-                React has made my life a lot easier with Front-End development.
-              </Typography>
-            </CardContent>
-          </Card>
-          <Card className={classes.root}>
-            <CardImg>
-              <TypeSVG />
-            </CardImg>
-            <CardContent>
-              <Typography gutterBottom variant="h4" component="h2">
-                Typescript
-              </Typography>
-              <Typography variant="body1" color="textSecondary" component="p">
-                The best part about typescript is that, it tells you beforehand
-                about simple error. this has made my life a lot easier.
-              </Typography>
-            </CardContent>
-          </Card>
-        </ThemeProvider>
-      </MaterialCards>
+      <Bounce left duration={2000}>
+        <MaterialCards>
+          <ThemeProvider theme={theme}>
+            <Card className={classes.root}>
+              <CardImg>
+                <FrontEndSVG />
+              </CardImg>
+              <CardContent>
+                <Typography gutterBottom variant="h4" component="h2">
+                  FrontEnd
+                </Typography>
+                <Typography variant="body1" color="textSecondary" component="p">
+                  I'm more front end focused and love to work with Reactjs as
+                  well as pure HTML, CSS .
+                </Typography>
+              </CardContent>
+            </Card>
+            <Card className={classes.root}>
+              <CardImg>
+                <ReactSVG />
+              </CardImg>
+              <CardContent>
+                <Typography gutterBottom variant="h4" component="h2">
+                  React
+                </Typography>
+                <Typography variant="body1" color="textSecondary" component="p">
+                  React has made my life a lot easier with Front-End
+                  development.
+                </Typography>
+              </CardContent>
+            </Card>
+            <Card className={classes.root}>
+              <CardImg>
+                <TypeSVG />
+              </CardImg>
+              <CardContent>
+                <Typography gutterBottom variant="h4" component="h2">
+                  Typescript
+                </Typography>
+                <Typography variant="body1" color="textSecondary" component="p">
+                  The best part about typescript is that, it tells you
+                  beforehand about simple error. this has made my life a lot
+                  easier.
+                </Typography>
+              </CardContent>
+            </Card>
+          </ThemeProvider>
+        </MaterialCards>
+      </Bounce>
     </div>
   );
 };
