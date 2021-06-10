@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/i-priyanshu.github.io/static/css/main.a3a1de4e.chunk.css",
+    "main.js": "/i-priyanshu.github.io/static/js/main.47949609.chunk.js",
+    "main.js.map": "/i-priyanshu.github.io/static/js/main.47949609.chunk.js.map",
+    "runtime-main.js": "/i-priyanshu.github.io/static/js/runtime-main.f0368c1b.js",
+    "runtime-main.js.map": "/i-priyanshu.github.io/static/js/runtime-main.f0368c1b.js.map",
+    "static/css/2.6e7ac891.chunk.css": "/i-priyanshu.github.io/static/css/2.6e7ac891.chunk.css",
+    "static/js/2.c1724adc.chunk.js": "/i-priyanshu.github.io/static/js/2.c1724adc.chunk.js",
+    "static/js/2.c1724adc.chunk.js.map": "/i-priyanshu.github.io/static/js/2.c1724adc.chunk.js.map",
+    "index.html": "/i-priyanshu.github.io/index.html",
+    "static/css/2.6e7ac891.chunk.css.map": "/i-priyanshu.github.io/static/css/2.6e7ac891.chunk.css.map",
+    "static/css/main.a3a1de4e.chunk.css.map": "/i-priyanshu.github.io/static/css/main.a3a1de4e.chunk.css.map",
+    "static/js/2.c1724adc.chunk.js.LICENSE.txt": "/i-priyanshu.github.io/static/js/2.c1724adc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f0368c1b.js",
+    "static/css/2.6e7ac891.chunk.css",
+    "static/js/2.c1724adc.chunk.js",
+    "static/css/main.a3a1de4e.chunk.css",
+    "static/js/main.47949609.chunk.js"
+  ]
+}
