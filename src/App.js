@@ -3,6 +3,7 @@ import AboutMe from "./components/About";
 import Home from "./components/home";
 import Skills from "./components/skillsParallax";
 import Project from "./components/Projects";
+import Contact from "./components/contact";
 const App = () => {
   return (
     <div>
@@ -10,6 +11,7 @@ const App = () => {
       <AboutMe />
       <Skills />
       <Project />
+      <Contact />
     </div>
   );
 };

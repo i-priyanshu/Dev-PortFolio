@@ -35,11 +35,16 @@ h1 {
   font-size: 1.5rem;
 }
 
-.home_svg {
-  width: 40%;
+.homeSvg {
   position: absolute;
-  //  top: 50px;
-  right: 0;
+  right: 7%;
+}
+
+.contactSvg {
+  position: absolute;
+  left: 7%;
+  @media (max-width: 900px) {
+  }
 }
 
 p {

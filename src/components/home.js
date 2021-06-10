@@ -3,12 +3,32 @@ import Homesvg from "../SVGs/Homesvg.svg";
 import { motion } from "framer-motion";
 import "../styles/home.scss";
 import HomeCard from "./HomeCard";
-
+import Lottie from "react-lottie";
+import animationData from "../lottie/63921-developer.json";
+import { Hidden } from "react-grid-system";
 const Home = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "",
+    },
+  };
   return (
     <div className="Home">
       <div className="front">
-        <img src={Homesvg} alt="" className="home_svg" />
+        {/* <img src={Homesvg} alt="" className="home_svg" /> */}
+        <Hidden sm xs>
+          <motion.span
+            initial={{ opacity: 0, y: -100 }}
+            transition={{ duration: 1, type: "spring", stiffness: "200" }}
+            animate={{ opacity: 1, y: 0 }}
+            className="homeSvg"
+          >
+            <Lottie options={defaultOptions} height={500} width={500} />
+          </motion.span>
+        </Hidden>
         <motion.div
           initial={{ opacity: 0, y: -100 }}
           transition={{ duration: 1 }}
@@ -24,7 +44,7 @@ const Home = () => {
             animate={{ x: 0 }}
             className="Name"
           >
-            PRIYANSHU
+            PRIYANSHU<span style={{ color: "#7350E6" }}></span>
           </motion.h1>
           <motion.p className="work_tag subtitles">A Web Developer</motion.p>
         </motion.div>

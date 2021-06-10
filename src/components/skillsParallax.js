@@ -21,17 +21,37 @@ const Wordclouds = () => {
       aria-hidden="true"
       className="skills__word-clouds"
     >
-      <p style={{ top: 250, left: "30%", fontSize: 23 }}>HTML5</p>
-      <p style={{ top: 0, left: 10, fontSize: 25 }}>Typescript</p>
-      <p style={{ top: 200, left: "78%", fontSize: 14 }}>CSS3</p>
-      <p style={{ top: 40, left: "87%", fontSize: 17 }}>Redux</p>
-      <p style={{ top: "30%", left: "35%", fontSize: 18 }}>figma</p>
-      <p style={{ top: 20, left: "60%", fontSize: 18 }}>Github</p>
-      <p style={{ top: 380, left: "85%", fontSize: 18 }}>MongoDB</p>
-      <p style={{ top: 300, left: "65%", fontSize: 19 }}>Firebase</p>
-      <p style={{ top: 350, left: 150, fontSize: 20 }}>ES6</p>
-      <p style={{ top: 120, left: "22%", fontSize: 14 }}>Web Sockets</p>
-      <p style={{ top: 180, left: "45%", fontSize: 15 }}>Socket.io</p>
+      <p style={{ top: 250, left: "20%", fontSize: 23, opacity: "60%" }}>
+        HTML5
+      </p>
+      <p style={{ top: 0, left: 10, fontSize: 25, opacity: "60%" }}>
+        Typescript
+      </p>
+      <p style={{ top: 200, left: "78%", fontSize: 14, opacity: "60%" }}>
+        CSS3
+      </p>
+      <p style={{ top: 40, left: "87%", fontSize: 17, opacity: "60%" }}>
+        Redux
+      </p>
+      <p style={{ top: "30%", left: "35%", fontSize: 18, opacity: "60%" }}>
+        figma
+      </p>
+      <p style={{ top: 20, left: "70%", fontSize: 18, opacity: "60%" }}>
+        Git & Github
+      </p>
+      <p style={{ top: 380, left: "85%", fontSize: 18, opacity: "60%" }}>
+        MongoDB
+      </p>
+      <p style={{ top: 300, left: "65%", fontSize: 19, opacity: "60%" }}>
+        Firebase
+      </p>
+      <p style={{ top: 350, left: 150, fontSize: 20, opacity: "60%" }}>ES6</p>
+      <p style={{ top: 120, left: "22%", fontSize: 14, opacity: "60%" }}>
+        Web Sockets
+      </p>
+      <p style={{ top: 180, left: "45%", fontSize: 15, opacity: "60%" }}>
+        Socket.io
+      </p>
     </Parallax>
   );
 };
@@ -47,7 +67,7 @@ const Skills = () => {
         <FontAwesomeIcon icon={["fab", "node"]} size="5x" />
       </Flex>
       <ParallaxProvider>
-        <Hidden md xs sm lg>
+        <Hidden md xs sm>
           <Wordclouds />
         </Hidden>
       </ParallaxProvider>
@@ -74,6 +94,9 @@ const Flex = styled.div`
   color: blueviolet;
   padding: 2rem 0;
   z-index: 10;
+  @media (max-width: 768px) {
+    font-size: 9px;
+  }
 `;
 
 const SkillsWrapper = styled.section`

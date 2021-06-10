@@ -65,19 +65,17 @@ const Projects = () => {
       <Zoom>
         <ProjectCard>
           <ProjectDetail>
-            <h2>CodeWar</h2>
+            <h2>Dev Chat</h2>
             <p>
-              JS Note Editor is an online-IDE based web app to write and run the
-              code on the go. It consists of a Live-Markdown Editor as well to
-              mark the components easily. It makes use of bundlers like ESlint
-              and webpacks to compile the code and to import libraries from
-              NPM.js directly.
+              A Socket.io based Web app to communicate between developers in
+              public channel or you can create your own room for private
+              sessions among yourselves.
             </p>
             <CardButton>
               <Button
                 variant="contained"
                 color="primary"
-                href="https://github.com/i-priyanshu/JSNote-Editor"
+                href="https://github.com/i-priyanshu/Dev-Chat"
                 target="_blank"
                 startIcon={<GitHubIcon />}
               >
@@ -86,7 +84,7 @@ const Projects = () => {
               <Button
                 variant="contained"
                 color="primary"
-                href="https://jseditor.vercel.app/"
+                href="https://dev-chat-by-priyanshu.herokuapp.com/"
                 target="_blank"
                 startIcon={<VideoLabelIcon />}
                 style={{ margin: "1rem 1rem" }}
@@ -101,7 +99,7 @@ const Projects = () => {
                 scale: 1.2,
                 transition: { duration: 1 },
               }}
-              src="https://user-images.githubusercontent.com/70953098/120121810-2ea0b680-c1c3-11eb-8933-3fa7feb0bcad.png"
+              src="https://user-images.githubusercontent.com/70953098/121433916-3a963080-c99a-11eb-8e47-3812d009d0c4.png"
               alt="project_preview"
             />
             <CardSVg>
@@ -115,19 +113,17 @@ const Projects = () => {
       <Zoom>
         <ProjectCard>
           <ProjectDetail>
-            <h2>Dev Chat</h2>
+            <h2>Mini YouTube</h2>
             <p>
-              JS Note Editor is an online-IDE based web app to write and run the
-              code on the go. It consists of a Live-Markdown Editor as well to
-              mark the components easily. It makes use of bundlers like ESlint
-              and webpacks to compile the code and to import libraries from
-              NPM.js directly.
+              A Youtube-API based Web app where you can search the video and
+              from the top 5 results you can select the video to your own
+              accord.
             </p>
             <CardButton>
               <Button
                 variant="contained"
                 color="primary"
-                href="https://github.com/i-priyanshu/JSNote-Editor"
+                href="https://github.com/i-priyanshu/mini-youtube"
                 target="_blank"
                 startIcon={<GitHubIcon />}
               >
@@ -136,7 +132,7 @@ const Projects = () => {
               <Button
                 variant="contained"
                 color="primary"
-                href="https://jseditor.vercel.app/"
+                href="https://a-micro-youtube.netlify.app/"
                 target="_blank"
                 startIcon={<VideoLabelIcon />}
                 style={{ margin: "1rem 1rem" }}
@@ -151,7 +147,7 @@ const Projects = () => {
                 scale: 1.2,
                 transition: { duration: 1 },
               }}
-              src="https://user-images.githubusercontent.com/70953098/120121810-2ea0b680-c1c3-11eb-8933-3fa7feb0bcad.png"
+              src="https://user-images.githubusercontent.com/70953098/121435069-ee4bf000-c99b-11eb-8710-fcf387db9558.png"
               alt="project_preview"
             />
             <CardSVg>
@@ -171,7 +167,10 @@ export default Projects;
 //STYLE
 
 const ProjectPage = styled.div`
-  margin: 3rem;
+  margin: 7rem;
+  @media (max-width: 900px) {
+    margin: 2rem;
+  }
 `;
 
 const ProjectTitle = styled.h1`
